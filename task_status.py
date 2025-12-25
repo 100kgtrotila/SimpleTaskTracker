@@ -1,6 +1,6 @@
 import enum
 
-class TaskStatus(enum.Enum):
-    TODO = 1
-    IN_PROGRESS = 2
-    DONE = 3
+class TaskStatus(str, enum.Enum):
+    TODO = "todo"
+    IN_PROGRESS = "in-progress"
+    DONE = "done"
